@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@100;700;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(232, 232, 232);
+    font-family: 'Incosolata', monospace;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #062b56, #089aa7, #184c4e, #020808);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bgTransition 8s ease-in-out infinite;
+}
+h1{
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+h2{
+    letter-spacing: 2px;
+    margin-top: 0;
+    font-weight: 100;
+}
+.skills {
+    overflow: hidden;
+    height: 35px;
+}
+.skills-list{
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
+    animation: change 10s infinite;
+    text-align: center;
+}
+.list-item{
+    line-height:40px;
+    margin:0;
+}
+.social{
+    display: flex;
+    margin-top: 35px;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 0.5rem 2rem;
+    border: 1px solid white;
+    min-width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s cubic-bezier(0.5, 0.02, 0.6, 0.9);
+}
+.social a:nth-child(n+2){
+    margin-left: 0.5rem;
+}
+.social a:hover{
+    color: rgb(11, 80, 96);
+    background: white;
+}
+
+@keyframes bgTransition{
+    0%{
+        background-position: 0% 80%;
+    }
+    50%{
+        background-position: 80% 100%;
+    }
+    100%{
+        background-position: 0% 90%;
+    }
+}
+@keyframes change {
+    0%{
+        transform:translate3d(0,0,0);
+    }
+    30%{
+        transform:translate3d(0,-38%,0);
+    }
+    60%{
+        transform:translate3d(0,-76%,0);
+    }
+    90%{
+        transform:translate3d(0,0,0);
+    }
+}
