@@ -1,2 +1,3 @@
-# HTML-CSS3
-Desafio de estilização HTML e CSS3
+# Desafio HTML-CSS3
+
+Repositório destino dos arquivos correspondentes ao desafio de estilização do Bootcamp Full Stack developer TQI em parceria com a DIO.
